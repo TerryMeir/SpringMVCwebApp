@@ -18,5 +18,10 @@ public class LoginServlet extends HttpServlet {
 		request.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(request, response); // direct the response to JSP file instead of PrintWriter object to write HTML code
 
 	}
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+		request.setAttribute("userName", request.getParameter("userName"));
+		request.getRequestDispatcher("/WEB-INF/views/welcomePage.jsp").forward(request, response);
+
+	}
 
 }
