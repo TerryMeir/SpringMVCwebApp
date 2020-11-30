@@ -7,6 +7,6 @@
 		<title>Welcome page</title>
 	</head>
 	<body>
-		<h1>WELCOME ${userName}</h1>
+		<h1>WELCOME ${userName} ${userPassword}</h1>
 	</body>
 </html>

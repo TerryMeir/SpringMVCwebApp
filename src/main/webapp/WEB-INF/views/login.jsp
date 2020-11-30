@@ -15,5 +15,6 @@
 			Please enter your name <input type="text" name="userName">
 			Password <input type="password" name="userPassword"> <input type="submit"> 
 		</form>
+		<p style="color:red;">${errorMessage}</p>
 	</body>
 </html>
