@@ -11,7 +11,7 @@
 		<%Date todayDate = new Date();%>
 		<div>Current date is: <%=todayDate %> </div>
 		<h1>To Do List</h1>
-		<form action="/login.do" method="post">
+		<form action="/spring-mvc/login" method="post">
 			Please enter your name <input type="text" name="userName">
 			Password <input type="password" name="userPassword"> <input type="submit"> 
 		</form>
