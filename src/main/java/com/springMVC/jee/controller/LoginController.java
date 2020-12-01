@@ -1,5 +1,6 @@
 package com.springMVC.jee.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -13,7 +14,9 @@ import com.springMVC.jee.UserValidationService;
 @Controller		//declares that this is a spring controller
 public class LoginController {
 	
-	private UserValidationService validationService = new UserValidationService();
+	//private UserValidationService validationService = new UserValidationService();
+	@Autowired
+	UserValidationService validationService;
 	
 	@RequestMapping(value="/login", method=RequestMethod.GET)		//mapping it to http://localhost:8080/spring-mvc/login 
 	public String showLoginPage(){
