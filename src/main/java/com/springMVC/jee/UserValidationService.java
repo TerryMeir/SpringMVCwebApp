@@ -1,4 +1,4 @@
-package webapp;
+package com.springMVC.jee;
 
 public class UserValidationService {
 	
